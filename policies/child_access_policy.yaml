@@ -1,0 +1,8 @@
+policy:
+  name: "Minimum Age Requirement"
+  applies_to: "registration_forms, newsletter_signups, contact_us"
+  condition:
+    - user_age < 13
+  action:
+    - deny_submission: true
+    - show_message: "You must be at least 13 years old to submit information on this site."
