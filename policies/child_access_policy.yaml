@@ -1,6 +1,6 @@
 policy:
   name: "Minimum Age Requirement"
-  applies_to: "registration_forms, newsletter_signups, contact_us"
+  applies_to: "registration_form, newsletter_signups, contact_us"
   condition:
     - user_age < 13
   action:
