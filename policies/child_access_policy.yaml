@@ -1,3 +1,4 @@
+---
 policy:
   name: "Minimum Age Requirement"
   applies_to: "registration_form, newsletter_signups, contact_us"
