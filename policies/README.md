@@ -13,4 +13,12 @@ This folder includes machine-readable policies that support and enforce the priv
 
 ---
 
-These files are designed for use with future automation, audit logs, and policy enforcement through CI/CD pipelines or web hooks.
+## 🍪 Cookie Consent Policy
+
+- **File**: `cookie_consent_policy.yaml`
+- **Purpose**: Ensure visitors are informed about cookie usage and given the choice to accept or decline.
+- **Enforces**: Cookie consent banner and conditional tracking based on user response.
+- **Use Case**: Blocks non-essential tracking unless explicit consent is given.
+
+---
+
