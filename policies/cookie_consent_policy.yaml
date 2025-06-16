@@ -15,4 +15,3 @@ policy:
       then:
         - enable_tracking: false
         - show_message: "Non-essential cookies are disabled."
-
