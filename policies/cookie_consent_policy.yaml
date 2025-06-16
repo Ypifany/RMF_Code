@@ -5,7 +5,9 @@ policy:
   condition:
     - user_visit == true
   action:
-    - show_banner: "We use cookies to improve your experience. Do you accept?"
+    - show_banner: >
+    We use cookies to improve your experience.
+    Do you accept?
     - if: user_consent == true
       then:
         - enable_tracking: true
