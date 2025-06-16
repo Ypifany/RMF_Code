@@ -6,8 +6,8 @@ policy:
     - user_visit == true
   action:
     - show_banner: >
-    We use cookies to improve your experience.
-    Do you accept?
+        We use cookies to improve your experience.
+        Do you accept?
     - if: user_consent == true
       then:
         - enable_tracking: true
@@ -15,3 +15,4 @@ policy:
       then:
         - enable_tracking: false
         - show_message: "Non-essential cookies are disabled."
+
