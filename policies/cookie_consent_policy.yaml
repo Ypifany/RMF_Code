@@ -1,0 +1,15 @@
+---
+policy:
+  name: "Cookie Consent Enforcement"
+  applies_to: "homepage, all_pages_with_tracking"
+  condition:
+    - user_visit == true
+  action:
+    - show_banner: "We use cookies to improve your experience. Do you accept?"
+    - if: user_consent == true
+      then:
+        - enable_tracking: true
+    - if: user_consent == false
+      then:
+        - enable_tracking: false
+        - show_message: "Non-essential cookies are disabled."
