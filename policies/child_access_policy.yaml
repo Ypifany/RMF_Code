@@ -6,4 +6,5 @@ policy:
     - user_age < 13
   action:
     - deny_submission: true
-    - show_message: "You must be at least 13 years old to submit information on this site."
+    - show_message: >
+        You must be at least 13 years old to submit information on this site.
